@@ -1,0 +1,13 @@
+/*
+    MrIgor default settings
+*/
+{
+
+    /*
+        Default mr.igor path.
+
+        This can (an should) be overriden by project settings
+    */
+    "mrigor_path": "/usr/local/bin/igor",
+
+}
