@@ -19,9 +19,9 @@ environment), you have to tell the plugin where to find the igor bin file by
 selecting "Preferences" -> "Settings - User" in your Sublime Text menu and
 then add a line with the path to mr.igor, e.g.::
 
-{
+  {
     "mrigor_path": "/home/timo/mrigor/bin/igor",
-}
+  }
 
 
 Installation
