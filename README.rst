@@ -14,6 +14,15 @@ Install mr.igor on your system::
 
   $ pip install mr.igor
 
+If you decide to install mr.igor in a different location (e.g. in a virtual
+environment), you have to tell the plugin where to find the igor bin file by
+selecting "Preferences" -> "Settings - User" in your Sublime Text menu and
+then add a line with the path to mr.igor, e.g.::
+
+{
+    "mrigor_path": "/home/timo/mrigor/bin/igor",
+}
+
 
 Installation
 ============
@@ -45,7 +54,7 @@ Use CMD+SHIFT+I to run the current file through mr.igor to add missing imports.
 Credits
 =======
 
-This package is based on the Sublime Text 2 'SublimeTextIgorPlugin' by Martin
-Aspeli.
+mr.igor has been written by David Glick.
 
-https://github.com/optilude/SublimeTextIgorPlugin
+This package is based on the Sublime Text 2 'SublimeTextIgorPlugin' by Martin
+Aspeli (https://github.com/optilude/SublimeTextIgorPlugin).
