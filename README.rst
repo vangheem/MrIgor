@@ -30,9 +30,9 @@ Installation
 Using Package Control
 ---------------------
 
-  * Open Sublime Text Command Pallete and type "install" with no quotes
-  * Select "Install Package" from the dropdown box
-  * Type "MrIgor" with no quotes, select it and press <ENTER>
+* Open Sublime Text Command Pallete and type "install" with no quotes
+* Select "Install Package" from the dropdown box
+* Type "MrIgor" with no quotes, select it and press <ENTER>
 
 Using git
 ---------
