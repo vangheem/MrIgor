@@ -22,12 +22,15 @@ class IgorSaveCommand(sublime_plugin.EventListener):
                                stdout=subprocess.PIPE,
                                stderr=subprocess.PIPE).communicate()
         if out[1]:
-            sublime.error_message(
-                "mr.igor could not be found. " +
-                "Please make sure you have installed mr.igor properly and " +
-                "the mrigor_bin setting points to the correct path. " +
-                "Error message was: '%s'" % out[1].decode('utf-8')
-            )
+            if 'could not compile' in out[1]:
+                sublime.status_message("mr.igor could not compile '%s'" % filename)
+            else:
+                sublime.error_message(
+                    "mr.igor could not be found. " +
+                    "Please make sure you have installed mr.igor properly and " +
+                    "the mrigor_bin setting points to the correct path. " +
+                    "Error message was: '%s'" % out[1].decode('utf-8')
+                )
         else:
             sublime.status_message("mr.igor reaped file '%s'" % filename)
 
